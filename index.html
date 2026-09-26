@@ -922,6 +922,29 @@
       line-height: 1.7;
       color: var(--muted);
     }
+    .modal-repo {
+      margin-top: 26px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      font: 500 .62rem "DM Mono";
+      letter-spacing: .08em;
+    }
+    .modal-repo a, .modal-repo span {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 0 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--ink);
+      background: #f5f9f6;
+    }
+    .modal-repo a:hover {
+      border-color: var(--green);
+      color: var(--green);
+      transform: translateY(-1px);
+    }
 
     /* ----- REVEAL (shared) ----- */
     .reveal {
@@ -1543,7 +1566,7 @@
     <!-- ACADEMICS -->
     <section id="academics" class="academics">
       <div class="container">
-        <div class="section-head reveal"><div class="eyebrow">03 – Academic Signal</div><h2>Numbers, but make<br><span>them tell a story.</span></h2><p>My Percentage in 10th Standard are:-</p></div>
+        <div class="section-head reveal"><div class="eyebrow">03 – Academic Signal</div><h2>Numbers, but make<br><span>them tell a story.</span></h2><p>My Percentage in 10th Standard are (I_Dont_Want_to reveal_the_ints.) :-</p></div>
         <div class="academic-layout">
           <div class="scoreboard reveal"><div class="eyebrow" style="color:#79d99e">CLASS X / OVERALL</div><div class="big-score">85.6%</div><p>From CBSE Board , In Year 2025-26 . </p><div class="score-note">ACADEMIC RECORD · VERIFIED BY YOU</div></div>
           <div class="subjects">
@@ -1577,14 +1600,14 @@
     <!-- PROJECTS -->
     <section id="projects" class="projects">
       <div class="container">
-        <div class="section-head reveal"><div class="eyebrow">05 – Built in the real world</div><h2>Ideas became<br><span>systems.</span></h2><p>The projects are evidence of how I learn. Click one to reveal the problem, thinking, technology and next step.</p></div>
+        <div class="section-head reveal"><div class="eyebrow">05 – Built in the real world</div><h2>Ideas became<br><span>systems.</span></h2><p>These all projects are just problems I and many people have to face , I solve them so they ar'nt a problem for anyone else anymore . QUALITY OF LIFE :> . Click one to reveal the problem, thinking, technology and next step.</p></div>
         <div class="project-grid">
-          <article class="project reveal" onclick="openProject('HybridION','Academic Platform','Academic tracking and visualization concept.','Performance, tests, notes, schedules and student workflows.','Python / Web / UI','Connect the views into a stronger underlying data model.')"><span class="pnum">PROJECT 01</span><h3>HybridION</h3><p>Turning the everyday student workflow into a visual system.</p><span class="tech">ACADEMIC · DATA · PRODUCT</span></article>
-          <article class="project reveal" onclick="openProject('Anion Bot','Discord Platform','A Discord automation and server-management project.','Moderation, automation, engagement, tickets and giveaways.','Python / Discord / APIs','Improve reliability, documentation and UX.')"><span class="pnum">PROJECT 02</span><h3>Anion Bot</h3><p>Making complex server management feel simple.</p><span class="tech">AUTOMATION · BOT · PRODUCT</span></article>
-          <article class="project reveal" onclick="openProject('LinkedION','Networking','A LAN file-sharing experiment.','Browser interface backed by Flask for local-network file sharing.','Python / Flask / HTTP','Improve reliability, authentication and large-file handling.')"><span class="pnum">PROJECT 03</span><h3>LinkedION</h3><p>Learning networking by making devices communicate.</p><span class="tech">NETWORKING · FLASK · HTTP</span></article>
-          <article class="project reveal" onclick="openProject('Generion','Productivity','A visual project tracker based on connected nodes.','A node-based interface for representing projects and progress.','HTML / CSS / JavaScript','Add persistent graphs, dependencies and milestones.')"><span class="pnum">PROJECT 04</span><h3>Generion</h3><p>Exploring whether visual graphs can change productivity.</p><span class="tech">VISUALIZATION · UI · GRAPH</span></article>
-          <article class="project reveal" onclick="openProject('Network Scanner','Networking Tool','A learning-focused networking utility for controlled environments.','Exploring hosts, ports, sockets and network services.','Python / Networking','Improve architecture and visualization responsibly.')"><span class="pnum">PROJECT 05</span><h3>Network Scanner</h3><p>Understanding networks from the protocol level upward.</p><span class="tech">SOCKETS · PORTS · NETWORKS</span></article>
-          <article class="project reveal" onclick="openProject('Let\'s Make','Web Experiments','A collection of small front-end experiments.','Utilities and productivity interfaces using web technologies.','HTML / CSS / JavaScript','Turn the strongest experiments into standalone tools.')"><span class="pnum">PROJECT 06</span><h3>Let's Make</h3><p>Small experiments that became stepping stones.</p><span class="tech">WEB · EXPERIMENTS · JS</span></article>
+          <article class="project reveal" onclick="openProject('HybridION')"><span class="pnum">PROJECT 01</span><h3>HybridION</h3><p>A JEE performance system built from the need to actually understand progress.</p><span class="tech">ACADEMICS · DATA · WEB APP</span></article>
+          <article class="project reveal" onclick="openProject('Generion')"><span class="pnum">PROJECT 02</span><h3>Generion</h3><p>A visual system for connecting projects, ideas and the structure behind them.</p><span class="tech">VISUALIZATION · SYSTEMS · UI</span></article>
+          <article class="project reveal" onclick="openProject('Let\'s Make')"><span class="pnum">PROJECT 03</span><h3>Let's Make</h3><p>A practical daily command center for schedules, tasks, homework and books.</p><span class="tech">WEB · PRODUCTIVITY · JS</span></article>
+          <article class="project reveal" onclick="openProject('EditH')"><span class="pnum">PROJECT 04</span><h3>EditH</h3><p>A Discord management platform built around GUI-first control and server protection.</p><span class="tech">PYTHON · DISCORD · FLASK · VERCEL</span></article>
+          <article class="project reveal" onclick="openProject('Resume Site')"><span class="pnum">PROJECT 05</span><h3>Resume Site</h3><p>This interactive academic resume — designed as a living record rather than a static document.</p><span class="tech">HTML · CSS · JS · THREE.JS</span></article>
+          <article class="project reveal" onclick="openProject('Demonials-Web')"><span class="pnum">PROJECT 06</span><h3>Demonials-Web</h3><p>The first attempt at turning web design and development into a real service.</p><span class="tech">WEB DESIGN · FREELANCE · ENTREPRENEURSHIP</span></article>
         </div>
       </div>
     </section>
@@ -1592,7 +1615,7 @@
     <!-- JOURNEY -->
     <section id="journey" class="journey">
       <div class="container">
-        <div class="section-head reveal"><div class="eyebrow" style="color:#79d99e">06 – Trajectory</div><h2>Still becoming<br><span>the person.</span></h2><p>A good admissions résumé shouldn't pretend the journey is finished. It should show direction.</p></div>
+        <div class="section-head reveal"><div class="eyebrow" style="color:#79d99e">06 – Trajectory</div><h2>Still becoming<br><span>the person.</span></h2><p>Uffff , I not claiming i best  , But i am betting i will be the best, And i never goes back on my words, thats my ninja way , that's my NINDO!</p></div>
         <div class="journey-track">
           <article class="journey-card reveal"><div class="jdot"></div><span>PHASE 01</span><h3>Curiosity</h3><p>Programming becomes a way to answer questions about how things work.</p></article>
           <article class="journey-card reveal"><div class="jdot"></div><span>PHASE 02</span><h3>Systems</h3><p>Web development expands into Python, networking, automation and architecture.</p></article>
@@ -1605,11 +1628,14 @@
     <!-- ACHIEVEMENTS -->
     <section class="achievements">
       <div class="container">
-        <div class="section-head reveal"><div class="eyebrow">07 – Evidence</div><h2>Things worth<br><span>remembering.</span></h2><p>Replace these with your actual awards, competitions, certifications, launches, research, rankings or other verified milestones.</p></div>
+        <div class="section-head reveal"><div class="eyebrow">07 – Evidence</div><h2>Things I have<br><span>actually done.</span></h2><p>This all is just what I think i should do and i do , maybe that's what freedom feels like. is'nt it??</p></div>
         <div class="achievement-grid">
-          <article class="achievement reveal"><div class="icon">⌁</div><h3>[Achievement / Award]</h3><p>[Year] · [Competition / organization]. Add the measurable result and what you learned.</p></article>
-          <article class="achievement reveal"><div class="icon">◈</div><h3>Independent Building</h3><p>Multiple software systems created outside normal coursework – evidence of self-directed learning.</p></article>
-          <article class="achievement reveal"><div class="icon">↗</div><h3>[Milestone]</h3><p>[Deployment / certification / competition / research / community contribution]. Keep this factual.</p></article>
+          <article class="achievement reveal"><div class="icon">#</div><h3>JEE Mock Tests · Top 400</h3><p>Currently ranking around the top 400 among roughly 3,000 students in JEE mock tests, with a personal best around that range.</p></article>
+          <article class="achievement reveal"><div class="icon">⌁</div><h3>TryHackMe · #25,000</h3><p>Reached a highest global ranking around #25,000 on TryHackMe while exploring practical cybersecurity and networking.</p></article>
+          <article class="achievement reveal"><div class="icon">◉</div><h3>Discord Community · 250+</h3><p>Owner of a Discord community with 250+ members, handling the community, moderation and the systems that keep it running.</p></article>
+          <article class="achievement reveal"><div class="icon">↗</div><h3>EditH · 500+ Users</h3><p>Built and deployed EditH across 100+ servers, with thousands of users interacting with the platform and its server-management features.</p></article>
+          <article class="achievement reveal"><div class="icon">◇</div><h3>Ran a Small Gau-Shala</h3><p>Helped run a small gau-shala focused on caring for and treating cows — a responsibility outside school and software.</p></article>
+          <article class="achievement reveal"><div class="icon">+</div><h3>Demonials-Web · Real Clients</h3><p>Started an independent web-building venture, spent months trying to acquire clients, and delivered work for small businesses including bakeries and cafés.</p></article>
         </div>
       </div>
     </section>
@@ -1618,16 +1644,31 @@
     <section class="interaction">
       <div class="container">
         <div class="interaction-box reveal" id="contact">
-          <div><div class="eyebrow">08 – The human behind the record</div><h2>I don't want to<br><span style="color:var(--green)">just study.</span></h2><p>[Write 3–5 sentences about what you want to explore at university, the problems you want to solve, and why computer science matters to you.]</p></div>
+          <div><div class="eyebrow">08 – The human behind the record</div><h2>I don't want to<br><span style="color:var(--green)">just study.</span></h2><p>I am bored of what School ask me to do, Its boring to learn science through textBook , Why can't we put sodium in water cooler? why can't we store hot water in school's refrigerator and see if it actually forming into ice faster than cold water. And the worst thing that i have seen ise Learning how to Open Ms-Excel in 7th standard like now you knows the what's the real standard.... I think imma change this thing for sure , no matter what..... , Hehehe Stay tuned with me , Future Greatest Cyber Security Engineer this side ~ Udit , Watashi Wa Udit...</p></div>
         </div>
       </div>
     </section>
   </main>
 
-  <div class="container footer"><span>© 2026 Udit Singh Dhakrey</span><span>Interactive Academic Resume · Replace every [PLACEHOLDER] before publishing</span></div>
+  <div class="container footer"><span>© 2026 Udit Singh Dhakrey</span><span>Interactive Academic Resume</span></div>
 
   <!-- MODAL -->
-  <div class="modal" id="modal"><div class="modal-box"><button class="modal-close" onclick="closeProject()">×</button><div class="eyebrow" id="mtype"></div><h2 id="mtitle"></h2><p class="modal-desc" id="mdesc"></p><div class="modal-section"><h4>What I built</h4><p id="mbuilt"></p></div><div class="modal-section"><h4>Technology</h4><p id="mtech"></p></div><div class="modal-section"><h4>Next step</h4><p id="mnext"></p></div></div></div>
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeProject()">×</button>
+      <div class="eyebrow" id="mtype"></div>
+      <h2 id="mtitle"></h2>
+      <p class="modal-desc" id="mdesc"></p>
+      <div class="modal-section"><h4>The purpose</h4><p id="mpurpose"></p></div>
+      <div class="modal-section"><h4>Why I started it</h4><p id="mmotivation"></p></div>
+      <div class="modal-section"><h4>The struggle</h4><p id="mstruggle"></p></div>
+      <div class="modal-section"><h4>The solution</h4><p id="msolution"></p></div>
+      <div class="modal-section"><h4>What it does</h4><p id="mfeatures"></p></div>
+      <div class="modal-section"><h4>Technology</h4><p id="mtech"></p></div>
+      <div class="modal-section"><h4>Next step</h4><p id="mnext"></p></div>
+      <div class="modal-repo" id="mrepo"></div>
+    </div>
+  </div>
 
   <script>
     // ---- progress bar ----
@@ -1669,14 +1710,94 @@
       els.forEach(el => tileObserver.observe(el));
     })();
 
-    // ---- modal ----
-    function openProject(title, type, desc, built, tech, next) {
-      document.querySelector('#mtype').textContent = type;
+    // ---- project case studies ----
+    // Repository URLs are deliberately kept separate from the card click.
+    // Clicking a project never redirects; it opens the case-study modal first.
+    const projectData = {
+      'HybridION': {
+        type: 'Academic Platform',
+        desc: 'A single-file academic performance system built around the reality of JEE preparation.',
+        purpose: 'I wanted a way to see my real performance instead of treating every test as an isolated score. The idea was to turn marks, mistakes and daily preparation into one visual system.',
+        motivation: 'App development, web development, programming and cybersecurity are the areas I naturally keep returning to. I wanted to apply that interest to the problem I was personally facing: tracking a serious JEE workload without losing the bigger picture.',
+        struggle: 'My laptop could not handle Android Studio reliably. I still wanted an application-like experience, so the normal native Android route was not practical for me.',
+        solution: 'I built the core as a single-file multi-page web application and designed it so the web layer could be packaged for Android through a WebView-style APK setup, using the Android manifest and Gradle project structure around the web application.',
+        features: 'JEE journey visualization, test-performance graphs, marks tracking, short notes, goals, schedules and a centralized view of progress and mistakes.',
+        tech: 'HTML / CSS / JavaScript · single-file architecture · WebView / APK packaging · Android Manifest · Gradle',
+        next: 'Keep moving from a personal tracker toward a more rigorous performance and mistake-analysis system.'
+      },
+      'Generion': {
+        type: 'Visual Systems',
+        desc: 'A node-based project visualizer built from the idea that complex work can be easier to understand when its relationships are visible.',
+        purpose: 'I wanted to represent projects as systems instead of flat lists — ideas, pages, components and dependencies connected into something I could visually reason about.',
+        motivation: 'I enjoy understanding how pieces connect. Generion was an experiment in turning that instinct into an interface rather than keeping the structure only in my head.',
+        struggle: 'The hard part was not drawing nodes; it was deciding what information deserves a connection, how the interface should communicate hierarchy, and how to make a graph useful instead of decorative.',
+        solution: 'I built a browser-based node system where concepts can be placed, connected and explored as a visual project structure, keeping the implementation lightweight and editable.',
+        features: 'Node-based project mapping, connected concepts, visual relationships and a foundation for tracking how pages, systems and ideas depend on one another.',
+        tech: 'HTML / CSS / JavaScript · DOM / SVG-style visual thinking · interactive UI architecture',
+        next: 'Evolve the visual graph into a persistent project architecture with dependencies, milestones and richer state.'
+      },
+      "Let's Make": {
+        type: 'Productivity System',
+        desc: 'A practical daily workspace for keeping schedules, tasks, homework and books in one place.',
+        purpose: 'I needed something closer to a personal command center for everyday study: not just a to-do list, but a place where the day, homework and study material could live together.',
+        motivation: 'JEE preparation creates many small obligations that are easy to lose between classes, tests and self-study. I wanted to reduce that friction by putting the routine into a system I could control.',
+        struggle: 'The challenge was combining several different workflows without turning the interface into a cluttered dashboard. The product had to remain fast enough to use every day.',
+        solution: 'I combined schedule planning, todo management, homework tracking and book/resource organization into one web application so the daily workflow could be handled from one place.',
+        features: 'Daily schedule, todo lists, homework management, book tracking and a unified study workflow.',
+        tech: 'HTML / CSS / JavaScript · client-side state · responsive web UI',
+        next: 'Connect the separate workflows more intelligently so planning and execution inform each other.'
+      },
+      'EditH': {
+        type: 'Discord Platform',
+        desc: 'A GUI-first Discord management platform designed for people who should not have to memorize commands to safely run a server.',
+        purpose: 'New Discord server owners often depend on other people when they first start managing a community. I wanted to make server control more understandable through a web interface while also addressing the security problems that come with raids and nukes.',
+        motivation: 'I kept seeing how much knowledge was hidden behind bot commands. A beginner can have a successful community and still not know how to protect or configure it. EditH was my attempt to make that power accessible without making the user learn an entire command system first.',
+        struggle: 'The project grew into a very large feature set. Hosting the Python side alone was becoming expensive — around $8/month for the setup I was considering — while my available Railway budget was close to $1/month. I nearly stopped, but instead experimented with the architecture.',
+        solution: 'I split the system across services: Vercel handles the always-available web/Flask-facing layer, while Railway executes the Python bot process. Requests and state move between the web layer and bot through a lightweight connection pattern, reducing the hosting cost dramatically — from roughly $8/month toward about $0.40/month in my working setup.',
+        features: 'GUI-based server management, anti-nuke and anti-raid protection, giveaways, ticket monitoring, transcription, inter-user web interaction, server information, authenticated web access and Discord verification with credentials delivered through DM.',
+        tech: 'Python · Discord API · Flask · Vercel · Railway · web-to-bot request routing · authenticated web UI',
+        next: 'Keep improving reliability, security, documentation and the separation between the public web layer and the bot execution layer.',
+        repo: 'https://github.com/Demonials/EditH-Web'
+      },
+      'Resume Site': {
+        type: 'Personal System',
+        desc: 'The resume itself is a project: an interactive academic record designed to show how I think, build and learn.',
+        purpose: 'A normal PDF can list projects, but it cannot show the relationships between them or explain why they exist. I wanted the resume to behave more like a small product.',
+        motivation: 'I care strongly about web design and interaction, and I wanted my academic record to demonstrate those skills instead of only describing them.',
+        struggle: 'The challenge was balancing visual ambition with credibility. It needed to feel engineered and personal rather than like a generic AI-generated portfolio template.',
+        solution: 'I built a single-page interactive resume with structured sections, project case studies, reveal transitions, a Three.js visual layer and a consistent editorial design system.',
+        features: 'Interactive project case studies, academic record, interests, achievements, journey, responsive layout, scroll progress and lightweight 3D visualization.',
+        tech: 'HTML · CSS · JavaScript · Three.js · Manrope · Space Grotesk · DM Mono',
+        next: 'Continue replacing generic placeholders with verified evidence, links and measurable outcomes as the work grows.'
+      },
+      'Demonials-Web': {
+        type: 'Independent Venture',
+        desc: 'My first serious attempt at turning web design and development into a service.',
+        purpose: 'I wanted to test whether I could take the skills I was learning — design, development and deployment — and turn them into something people would actually pay for.',
+        motivation: 'Instead of waiting until I felt completely ready, I wanted to experience the full cycle myself: finding clients, understanding their needs, building the site and delivering it.',
+        struggle: 'The biggest problem was not coding. I had almost nothing to advertise, very little reach and no established customer base. I tried Instagram and other platforms, asked friends for help and spent roughly six months trying different ways to find clients.',
+        solution: 'I kept pitching, building and iterating. The result was only a small number of clients, including small businesses such as bakeries and cafés, so I temporarily closed the venture rather than pretending it had become something it had not.',
+        features: 'Web design, front-end development, deployment, client communication and end-to-end delivery of small business websites.',
+        tech: 'HTML / CSS / JavaScript · responsive web design · deployment workflows',
+        next: 'Demonials is paused, not abandoned. The next version will return with stronger positioning, a better portfolio and a more deliberate client-acquisition strategy.'
+      }
+    };
+
+    function openProject(title) {
+      const p = projectData[title];
+      if (!p) return;
+      document.querySelector('#mtype').textContent = p.type;
       document.querySelector('#mtitle').textContent = title;
-      document.querySelector('#mdesc').textContent = desc;
-      document.querySelector('#mbuilt').textContent = built;
-      document.querySelector('#mtech').textContent = tech;
-      document.querySelector('#mnext').textContent = next;
+      document.querySelector('#mdesc').textContent = p.desc;
+      document.querySelector('#mpurpose').textContent = p.purpose;
+      document.querySelector('#mmotivation').textContent = p.motivation;
+      document.querySelector('#mstruggle').textContent = p.struggle;
+      document.querySelector('#msolution').textContent = p.solution;
+      document.querySelector('#mfeatures').textContent = p.features;
+      document.querySelector('#mtech').textContent = p.tech;
+      document.querySelector('#mnext').textContent = p.next;
+      const repo = document.querySelector('#mrepo');
+      repo.innerHTML = p.repo ? `<a href="${p.repo}" target="_blank" rel="noopener noreferrer">VIEW REPOSITORY ↗</a>` : `<span>REPOSITORY LINK · ADD VERIFIED GITHUB URL</span>`;
       document.querySelector('#modal').classList.add('open');
       document.body.style.overflow = 'hidden';
     }
